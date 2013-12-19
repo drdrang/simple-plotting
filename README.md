@@ -18,7 +18,7 @@ More than one function can be specified; separate them with a semicolon. Thus, s
 
     plot 'tan(x); x' pi 3*pi/2-.01 0 5
 
-can be used to find the intersection of the two given functions. This example also shows that you can use expressions in the limits
+can be used to find the intersection of the two given functions. This example also shows that you can use expressions in the limits.
 
 The result of `plot` is an 800×600 PNG image that's sent to standard output. Normally, this would be redirected to a file,
 
@@ -34,7 +34,7 @@ The script that plots lists of points, `pplot`, gets its data from standard inpu
 
     pbpaste | pplot
 
-As with `plot`, `pplot` produces an 800×600 PNG image that's sent to standard output, so one would normally redirect this to a file
+As with `plot`, `pplot` produces an 800×600 PNG image that's sent to standard output, so one would normally redirect this to a file:
 
     pbpaste | pplot > plot.png
 
