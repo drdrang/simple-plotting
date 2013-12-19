@@ -21,4 +21,4 @@ for line in sys.stdin:
 plt.plot(x, y, marker)
 plt.minorticks_on()
 plt.grid(which='both', color='#aaaaaa')
-plt.savefig(sys.stdout)
+plt.savefig(sys.stdout, format='png')

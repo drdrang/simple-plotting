@@ -22,4 +22,4 @@ for i, f in enumerate(fcns):
   plt.plot(x, y, "-", linewidth=2)
 plt.minorticks_on()
 plt.grid(which='both', color='#aaaaaa')
-plt.savefig(sys.stdout)
+plt.savefig(sys.stdout, format='png')
