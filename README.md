@@ -26,7 +26,7 @@ The result of `plot` is an 800×600 PNG image that's sent to standard output. No
 
 and viewed in whatever graphics program the user prefers. No controls for tick marks or grid spacing are provided—this is quick and dirty plotting.
 
-![Two-function plot](http://www.flickr.com/photos/drdrang/11444287224/)
+<img src="http://farm8.staticflickr.com/7449/11444287224_fdf3652083.jpg" alt="Two-function plot" title="Two-function plot" />
 
 ## Points ##
 
@@ -34,7 +34,15 @@ The script that plots lists of points, `pplot`, gets its data from standard inpu
 
     pbpaste | pplot
 
-As with `plot`, `pplot` produces an 800×600 PNG image that's sent to standard output
+As with `plot`, `pplot` produces an 800×600 PNG image that's sent to standard output, so one would normally redirect this to a file
+
+    pbpaste | pplot > plot.png
+
+Each line of the input data represents one (x, y) point. The x and y values can be separated by tabs, spaces, or commas.
+
+Normally, `pplot` plots the points only. If you want to connect the points with a line, use the `-l` option:
+
+    pbpaste | pplot -l > plot.png
 
 
 
