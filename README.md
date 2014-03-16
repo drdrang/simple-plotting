@@ -28,6 +28,12 @@ and viewed in whatever graphics program the user prefers. No controls for tick m
 
 <img src="http://farm8.staticflickr.com/7449/11444287224_fdf3652083.jpg" alt="Two-function plot" title="Two-function plot" />
 
+A PDF can be produced by using the `-p` or `--pdf` switch:
+
+    plot -p 'tan(x); x' pi 3*pi/2-.01 0 5 > plot.png
+
+Given that both PNG and PDF start with "p," the `-p` switch is poorly named, but I couldn't think of a better one.
+
 ## Points ##
 
 The script that plots lists of points, `pplot`, gets its data from standard input. On the Mac, it would be common to pass data in from the clipboard this way:
